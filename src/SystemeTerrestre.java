@@ -10,6 +10,7 @@ public class SystemeTerrestre extends Systeme{
         super(nom);
         this.positionRelative=positionRelative;
         this.vitesseRelative=vitesseRelative;
+        satelittes = new ArrayList<Satelitte>;
     }
     
     public void ajouteSatellite(Satellite s){
