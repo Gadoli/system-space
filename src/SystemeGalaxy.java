@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class SystemeGalaxy extends Systeme {
-    private ArrayList<SystemeSolaire> systemeSolaires;
+    private ArrayList<SystemePlanetaire> systemePlanetaires;
 
     public SystemeGalaxy(String nom){
         super(nom);
-        systemeSolaires=new ArrayList<SystemeSolaire>();
+        systemePlanetaires=new ArrayList<SystemePlanetaire>();
     }
 }
