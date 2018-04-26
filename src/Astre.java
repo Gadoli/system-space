@@ -1,5 +1,5 @@
-public abstract class Astrodome {
-    private static int nbAstrodome=0;
+public abstract class Astre{
+    private static int nbAstre=0;
     private int id;
     private String nom;
     private double masse;
@@ -7,9 +7,9 @@ public abstract class Astrodome {
     private Vecteur positionRelative;
     private Vecteur vitesseRelative;
 
-    public Astrodome(String nom,double masse,double rayonReel,Vecteur positionRelative,Vecteur vitesseRelative){
-        nbAstrodome++;
-        this.id=nbAstrodome;
+    public Astre(String nom,double masse,double rayonReel,Vecteur positionRelative,Vecteur vitesseRelative){
+        nbAstre++;
+        this.id=nbAstre;
         this.nom=nom;
         this.masse=masse;
         this.rayonReel=rayonReel;
