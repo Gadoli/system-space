@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class SysSolMultiEtoile extends SystemeSolaire {
+public class SysSolMultiEtoile extends SystemePlanetaire {
     private ArrayList<Etoile> etoiles;
 
     public SysSolMultiEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative){
