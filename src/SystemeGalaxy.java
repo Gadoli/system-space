@@ -7,4 +7,8 @@ public class SystemeGalaxy extends Systeme {
         super(nom);
         systemePlanetaires=new ArrayList<SystemePlanetaire>();
     }
+    
+    public void ajouteSysPlan(SystemePlanetaire SysPlan){
+        systemePlanetaires.add(SysPlan);
+    }
 }
