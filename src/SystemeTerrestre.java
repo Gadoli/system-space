@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class SystemeTerrestre extends Systeme{
     private Planete planete;
-    private ArrayList<Sateille> sateilles;
+    private ArrayList<Sateille> satelittes;
     private Vecteur positionRelative;
     private Vecteur vitesseRelative;
 
@@ -10,5 +10,9 @@ public class SystemeTerrestre extends Systeme{
         super(nom);
         this.positionRelative=positionRelative;
         this.vitesseRelative=vitesseRelative;
+    }
+    
+    public void ajouteSatellite(Satellite s){
+        satelittes.add(s);
     }
 }
