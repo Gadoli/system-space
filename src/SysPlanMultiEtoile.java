@@ -7,4 +7,8 @@ public class SysPlanMultiEtoile extends SystemePlanetaire {
         super(nom,positionRelative,vitesseRelative);
         this.etoiles=new ArrayList<Etoile>();
     }
+    
+    public void ajouteEtoile(Etoile e){
+        etoiles.add(e);
+    }
 }
