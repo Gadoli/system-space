@@ -6,6 +6,8 @@ public abstract class Systeme {
         this.nom=nom;
         this.periodeMAJ=0.01;// 22/4/2018   //valeur par defaut
     }
+    
+    public abtract void marcheSystem();
 }
 
 /*
