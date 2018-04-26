@@ -7,5 +7,4 @@ Short java project
 * Changed some words into proper terms :
 Solaire to Planetaire
 Astrodome to Astre
-
 * Added subject to repo
