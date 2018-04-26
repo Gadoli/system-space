@@ -8,3 +8,4 @@ Short java project
 Solaire to Planetaire
 Astrodome to Astre
 * Added subject to repo
+* Addede tme-solo to get ideas, examples
