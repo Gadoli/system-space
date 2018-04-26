@@ -1,8 +1,8 @@
-public abstract class SystemeSolaire extends Systeme{
+public abstract class SystemePlanetaire extends Systeme{
     private Vecteur positionRelative;
     private Vecteur vitesseRelative;
 
-    public SystemeSolaire(String nom,Vecteur positionRelative,Vecteur vitesseRelative){
+    public SystemePlanetaire(String nom,Vecteur positionRelative,Vecteur vitesseRelative){
         super(nom);
         this.positionRelative=positionRelative;
         this.vitesseRelative=vitesseRelative;
