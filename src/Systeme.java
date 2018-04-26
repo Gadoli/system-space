@@ -7,7 +7,7 @@ public abstract class Systeme {
         this.periodeMAJ=0.01;// 22/4/2018   //valeur par defaut
     }
     
-    public abtract void marcheSystem();
+    //public abtract void marcheSystem(); // 26/04/2018 // non ajouté car non traité dans les classes filles pour l'instant 
 }
 
 /*
