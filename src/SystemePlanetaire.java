@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public abstract class SystemePlanetaire extends Systeme{
     private Vecteur positionRelative;
     private Vecteur vitesseRelative;
