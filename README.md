@@ -12,7 +12,7 @@ Abstract -
 Statif -   
 Interface -  
 
-* Schémas des classes, point de vue fournisseur :
+* Schémas des classes, point de vue fournisseur :  
 Voir le fichier vpp, diagramme UML
 
 ## Dashboard
