@@ -32,7 +32,7 @@ Voir le fichier vpp, diagramme UML
 Solaire to Planetaire, 
 Astrodome to Astre
 * Added subject to repo
-* Addede tme-solo to get ideas, examples
+* Added tme-solo to get ideas, examples
 
 ## Compte-rendu 2 pages
 * texte expliquant le projet
