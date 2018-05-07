@@ -5,12 +5,12 @@ Le voyage vers la Lune, vers Mars, vers l'espace en a passionné plus d'un. Qui 
 Ainsi, le projet java suivant porte sur les systèmes se trouvant dans l'espace tels que des systèmes planétaires, des galaxies. Le but est de modéliser différentes planètes, différentes étoiles, différents systèmes et pouvoir obtenir une simulation d'une petite partie de l'univers pouvant aider à concevoir, à analyser ou à imaginer des concepts scientifiques, qui seront bien entendus limité.
 La classe UniversTest est notre main. Les données attribués à chaque astres sont réelles et ne sont pas fictives. Une partie de ce projet est aussi de visualiser l'état de l'espace. L'affichage se fait sur un plan 2D.
 
-* Tableau récapitulatif :
-Tableaux - 
-ArrayList -
-Abstract - 
-Statif - 
-Interface -
+* Tableau récapitulatif : \n
+Tableaux - \n
+ArrayList - \n
+Abstract - \n
+Statif - \n
+Interface - \n
 
 * Schémas des classes, point de vue fournisseur :
 Voir le fichier vpp, diagramme UML
