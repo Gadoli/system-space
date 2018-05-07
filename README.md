@@ -12,5 +12,6 @@ Astrodome to Astre
 
 
 ## Compte-rendu
+* 2 pages : texte expliquant le projet, tableau récapitulatif
 * Ajouter tableau de vérification pour le barême
 * Ajouter le diagramme UML
