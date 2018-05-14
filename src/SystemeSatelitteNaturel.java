@@ -17,5 +17,14 @@ public class SystemeSatelitteNaturel extends Systeme{
         satelittes.add(s);
     }
     
+    public String toString(){
+        s="";
+        for (int i=0; i<satelittes.length; i++){
+            s+=satellites.toString();
+        }
+        return planete.toString()+s;
+    }
+    
+    
     
 }
