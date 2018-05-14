@@ -7,4 +7,8 @@ public class Planete extends Astre {
     public String toString(){
         return "o";
     }
+    
+    public String getNom(){
+        return this.nom;
+    }
 }
