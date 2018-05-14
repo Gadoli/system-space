@@ -21,6 +21,10 @@ Voir le fichier vpp, diagramme UML
 ### Issues to do :
 * classe Course
 * classe Attraction
+* classe Comete
+
+### 14/05/18
+* Ajout des méthodes toString et getNom dans les classes d'astres : Etoile, Planete, Satellite   
 
 ### 07/05/18
 * Ajout du texte explicatif du projet, à vérifier par Chunyang ( )
