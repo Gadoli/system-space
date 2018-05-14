@@ -25,6 +25,7 @@ Voir le fichier vpp, diagramme UML
 
 ### 14/05/18
 * Ajout des méthodes toString et getNom dans les classes d'astres : Etoile, Planete, Satellite   
+* Changed word to proper term : SystemeTerrestre to SystemeSatelitteNaturel
 
 ### 07/05/18
 * Ajout du texte explicatif du projet, à vérifier par Chunyang ( )
