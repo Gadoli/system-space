@@ -7,4 +7,8 @@ public class Etoile extends Astre {
     public String toString(){
         return "+"
     }
+    
+    public String getNom(){
+        return this.nom;
+    }
 }
