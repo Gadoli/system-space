@@ -1,19 +1,19 @@
 import java.util.ArrayList;
 
 public abstract class SystemePlanetaire extends Systeme{
-    private Vecteur positionRelative;
-    private Vecteur vitesseRelative;
-    private ArrayList<Planete> Planetes;
+    protected ArrayList<SystemeTerrestre> sysTers;
 
-    public SystemePlanetaire(String nom,Vecteur positionRelative,Vecteur vitesseRelative){
-        super(nom);
-        this.positionRelative=positionRelative;
-        this.vitesseRelative=vitesseRelative;
-        Planetes = new ArrayList<Planete>();
+    public SystemePlanetaire(String nom,Vecteur positionRelative,Vecteur vitesseRelative,SystemeGalaxy superSys){
+        super(nom,positionRelative,vitesseRelative,superSys);
+        sysTers = new ArrayList<SystemeTerrestre>();
     }
     
-    public void ajouteSysTer( SystemeSatelitteNaturel ssn){
-        Planetes.add(ssn);
+    public abstract void ajouteSysTer( SystemeTerrestre st){
+        sysTers.add(st);
+    }
+
+    public ArrayList<SystemeTerrestre> getSysTers() {
+        return sysTers;
     }
 
 }
