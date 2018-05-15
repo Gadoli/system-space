@@ -36,5 +36,12 @@ public class Planete extends Astre {
     @Override
     public void marche(Vecteur vitesse, double temps) {
 
+
+    public String toString(){
+        return "o";
+    }
+    
+    public String getNom(){
+        return this.nom;
     }
 }

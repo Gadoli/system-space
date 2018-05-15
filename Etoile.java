@@ -55,4 +55,14 @@ public class Etoile extends Astre {
             return null;
         }
     }
+  
+    public String toString(){
+        return "+"
+    }
+    
+    public String getNom(){
+        return this.nom;
+    }
+    
+
 }

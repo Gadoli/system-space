@@ -11,6 +11,7 @@ public class Vecteur {
         this.z=z;
     }
 
+
     public static double distanceEntre(Vecteur p1, Vecteur p2){
         return sqrt((p1.x+p2.x)*(p1.x+p2.x)+(p1.y+p2.y)*(p1.y+p2.y)+(p1.z+p2.z)*(p1.z+p2.z));
     }//  7/05/2018
@@ -31,6 +32,7 @@ public class Vecteur {
         return new Vecteur(t*x,t*y,t*z);
     }
 
+
     public double distanceX(Vecteur v2){
         return x-v2.x;
     }//  23/04/2018
@@ -44,9 +46,11 @@ public class Vecteur {
     public double getX() {
         return x;
     }
+
     public double getY() {
         return y;
     }
+
     public double getZ() {
         return z;
     }
@@ -54,6 +58,7 @@ public class Vecteur {
     public void setX(double x) {
         this.x = x;
     }
+
     public void setY(double y) {
         this.y = y;
     }
@@ -77,4 +82,5 @@ public class Vecteur {
     public Vecteur clone(){
         return new Vecteur(x,y,z);
     }
+
 }

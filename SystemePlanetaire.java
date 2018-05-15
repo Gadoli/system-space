@@ -8,9 +8,12 @@ public abstract class SystemePlanetaire extends Systeme{
         sysTers = new ArrayList<SystemeTerrestre>();
     }
     
-    public abstract void ajouteSysTer( SystemeTerrestre st);
+    public abstract void ajouteSysTer( SystemeTerrestre st){
+        sysTers.add(st);
+    }
 
     public ArrayList<SystemeTerrestre> getSysTers() {
         return sysTers;
     }
+
 }

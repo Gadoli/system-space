@@ -13,7 +13,7 @@ public class SysPlanMultiEtoile extends SystemePlanetaire {
     public void ajouteEtoile(Etoile e){
         etoiles.add(e);
     }
-
+      
     @Override
     public void ajouteSysTer(SystemeTerrestre st) {
         if(etoiles.size()==0){

@@ -53,4 +53,5 @@ public abstract class Astre implements Attraction,Course{
         marche();
         setVitesseRelative(getVitesseRelative().add(force.mulScalaire(Systeme.periodeMAJ/getMasse())));//v->v+f/m*t
     }
+
 }

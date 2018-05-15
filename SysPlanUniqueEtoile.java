@@ -1,6 +1,7 @@
 public class SysPlanUniqueEtoile extends SystemePlanetaire {
     private Etoile etoile;
 
+  
     public SysPlanUniqueEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative,Etoile etoile,SystemeGalaxy superSys){
         super(nom,positionRelative,vitesseRelative,superSys);
         this.etoile=etoile;
