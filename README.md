@@ -19,8 +19,6 @@ Voir le fichier vpp, diagramme UML
 ## Dashboard
 
 ### Issues to do :
-* classe Course
-* classe Attraction
 * classe Comete
 
 ### 14/05/18
