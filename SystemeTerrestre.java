@@ -6,9 +6,18 @@ public class SystemeTerrestre extends Systeme{
     private ArrayList<Sateille> satelittes;
 
     /*constructeur*/
-    public SystemeTerrestre(String nom,Planete planete,Vecteur positionRelative,Vecteur vitesseRelative,SystemePlanetaire superSys){
-        super(nom,positionRelative,vitesseRelative,superSys);
+    public SystemeTerrestre(String nom,Planete planete,SystemePlanetaire superSys){
+        super(nom,planete.getPositionRelative(),planete.getVitesseRelative(),superSys);
+        this.planete=planete;
+        planete.setaSysteme(this);
         satelittes = new ArrayList<Sateille>();
+    }
+    public SystemeTerrestre(String nom,Planete planete){
+        this(nom,planete,null);
+    }
+
+    public SystemeTerrestre(Planete planete){
+        this("SysTer_"+planete.getNom(),planete,null);
     }
 
     /*getter*/
@@ -16,6 +25,7 @@ public class SystemeTerrestre extends Systeme{
 
     /*methode*/
     public void ajouteSatellite(Sateille s){
+        s.setaSysteme(this);
         satelittes.add(s);
     }
 

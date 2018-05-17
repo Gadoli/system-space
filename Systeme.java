@@ -13,14 +13,19 @@ public abstract class Systeme implements Course{
         this.vitesseRelative=vitesseRelative;
         this.superSys=superSys;
     }
+    public Systeme(String nom,Vecteur positionRelative,Vecteur vitesseRelative){
+        this(nom,positionRelative,vitesseRelative,null);
+    }
 
     /*getter*/
     public Vecteur getPositionRelative() {return positionRelative;}
     public Vecteur getVitesseRelative() {return vitesseRelative;}
+    public Systeme getSuperSys() { return superSys; }
 
     /*setter*/
     public void setPositionRelative(Vecteur positionRelative) {this.positionRelative = positionRelative;}
     public void setVitesseRelative(Vecteur vitesseRelative) {this.vitesseRelative = vitesseRelative;}
+    public void setSuperSys(Systeme superSys) { this.superSys = superSys; }
 
     /*methode*/
     public abstract void systemeMAJ();//la methode finale pour mettre a jour pour le systeme

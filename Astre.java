@@ -2,10 +2,10 @@ public abstract class Astre implements Attraction,Course{
     private static int nbAstre=0;
     private int id;
     private String nom;
-    private double masse;
-    private double rayonReel;
-    private Vecteur positionRelative;
-    private Vecteur vitesseRelative;
+    private double masse;//kg
+    private double rayonReel;//km
+    private Vecteur positionRelative;//AU
+    private Vecteur vitesseRelative;// km/s
     protected Systeme aSysteme;
 
     /*constructeur*/
@@ -20,16 +20,27 @@ public abstract class Astre implements Attraction,Course{
         this.aSysteme=aSysteme;
     }
 
+    public Astre(String nom,double masse,double rayonReel,Vecteur positionRelative,Vecteur vitesseRelative){
+        nbAstre++;
+        this.id=nbAstre;
+        this.nom=nom;
+        this.masse=masse;
+        this.rayonReel=rayonReel;
+        this.positionRelative=positionRelative;
+        this.vitesseRelative=vitesseRelative;
+    }
+
     /*getter*/
     public double getMasse() { return masse; }
     public Vecteur getVitesseRelative() { return vitesseRelative; }
     public Vecteur getPositionRelative() { return positionRelative; }
-    public double getRayonReel() { return rayonReel; }
+    public String getNom() {return nom;}
 
     /*setter*/
     public void setMasse(double masse) { this.masse = masse; }
     public void setVitesseRelative(Vecteur vitesseRelative) { this.vitesseRelative = vitesseRelative; }
     public void setPositionRelative(Vecteur positionRelative) { this.positionRelative = positionRelative; }
+    public void setaSysteme(Systeme aSysteme) {this.aSysteme = aSysteme;}
 
     /*outil*/
     public static double attractionGravifique(double masse1,double masse2,double distance){
@@ -54,5 +65,4 @@ public abstract class Astre implements Attraction,Course{
         marche();
         setVitesseRelative(getVitesseRelative().add(force.mulScalaire(Systeme.periodeMAJ/getMasse())));//v->v+f/m*t
     }
-
 }

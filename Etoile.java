@@ -1,31 +1,16 @@
 import java.util.ArrayList;
 
 public class Etoile extends Astre {
-
+    /*constructeur*/
     public Etoile(String nom,double masse,double rayonReel,Vecteur positionRelative,Vecteur vitesseRelative,SystemePlanetaire aSysPlan){
         super(nom,masse,rayonReel,positionRelative,vitesseRelative,aSysPlan);
     }
 
-    @Override
-    public double getMasse() {
-        return super.getMasse();
+    public Etoile(String nom,double masse,double rayonReel,Vecteur positionRelative,Vecteur vitesseRelative){
+        super(nom,masse,rayonReel,positionRelative,vitesseRelative);
     }
 
-    @Override
-    public void setMasse(double masse) {
-        super.setMasse(masse);
-    }
-
-    @Override
-    public void setPositionRelative(Vecteur positionRelative) {
-        super.setPositionRelative(positionRelative);
-    }
-
-    @Override
-    public void setVitesseRelative(Vecteur vitesseRelative) {
-        super.setVitesseRelative(vitesseRelative);
-    }
-
+    /*methode*/
     @Override
     public Vecteur calculeForce_p1() {
         SystemeGalaxy sg=(SystemeGalaxy) aSysteme.superSys;
@@ -55,14 +40,4 @@ public class Etoile extends Astre {
             return null;
         }
     }
-  
-    public String toString(){
-        return "+"
-    }
-    
-    public String getNom(){
-        return this.nom;
-    }
-    
-
 }

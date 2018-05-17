@@ -1,19 +1,49 @@
 import java.util.ArrayList;
 
 public class SysPlanMultiEtoile extends SystemePlanetaire {
+    /*attribut*/
     private ArrayList<Etoile> etoiles;
     private Etoile etoileVirtuel;
 
-    public SysPlanMultiEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative,SystemeGalaxy superSys){
-        super(nom,positionRelative,vitesseRelative,superSys);
+    /*constructeur*/
+    public SysPlanMultiEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative,ArrayList<SystemeTerrestre> sysTers,SystemeGalaxy superSys,ArrayList<Etoile>etoiles){
+        super(nom,positionRelative,vitesseRelative,sysTers,superSys);
+        this.etoiles=etoiles;
+        this.etoileVirtuel=new Etoile(nom+"_centreVirtuel",0,0,positionRelative,vitesseRelative,this);
+    }
+
+    public SysPlanMultiEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative,ArrayList<SystemeTerrestre> sysTers,SystemeGalaxy superSys){
+        this(nom,positionRelative,vitesseRelative,sysTers,superSys,null);
+        this.etoiles=new ArrayList<Etoile>();
+    }
+
+    public SysPlanMultiEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative,SystemeTerrestre []tabSysTer,SystemeGalaxy superSys){
+        super(nom,positionRelative,vitesseRelative,tabSysTer,superSys);
         this.etoiles=new ArrayList<Etoile>();
         this.etoileVirtuel=new Etoile(nom+"_centreVirtuel",0,0,positionRelative,vitesseRelative,this);
     }
-    
+
+    public SysPlanMultiEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative,SystemeGalaxy superSys){
+        super(nom,positionRelative,vitesseRelative);
+        super.superSys=superSys;
+        this.etoiles=new ArrayList<Etoile>();
+        this.etoileVirtuel=new Etoile(nom+"_centreVirtuel",0,0,positionRelative,vitesseRelative,this);
+    }
+
+    public SysPlanMultiEtoile(String nom,Vecteur positionRelative,Vecteur vitesseRelative){
+        this(nom,positionRelative,vitesseRelative,null);
+    }
+
+    /*getter*/
+    public ArrayList<Etoile> getEtoiles() { return etoiles; }
+    public Etoile getEtoileVirtuel() { return etoileVirtuel; }
+
+    /*methode*/
     public void ajouteEtoile(Etoile e){
         etoiles.add(e);
+        e.setaSysteme(this);
     }
-      
+
     @Override
     public void ajouteSysTer(SystemeTerrestre st) {
         if(etoiles.size()==0){
@@ -23,13 +53,6 @@ public class SysPlanMultiEtoile extends SystemePlanetaire {
         else{
             sysTers.add(st);
         }
-    }
-
-    public ArrayList<Etoile> getEtoiles() {
-        return etoiles;
-    }
-    public Etoile getEtoileVirtuel() {
-        return etoileVirtuel;
     }
 
     public void barycentreMAJ(){//mis a jour la position de barycentre du systeme planetaire par apport au systeme galaxy

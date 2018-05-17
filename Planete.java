@@ -1,9 +1,13 @@
 import java.util.ArrayList;
 
 public class Planete extends Astre {
-
+    /*constructeur*/
     public Planete(String nom,double masse,double rayonReel,Vecteur positionRelative,Vecteur vitesseRelative, SystemePlanetaire aSysPlan){
         super(nom,masse,rayonReel,positionRelative,vitesseRelative,aSysPlan);
+    }
+
+    public Planete(String nom,double masse,double rayonReel,Vecteur positionRelative,Vecteur vitesseRelative){
+        super(nom,masse,rayonReel,positionRelative,vitesseRelative);
     }
 
     @Override
@@ -36,12 +40,5 @@ public class Planete extends Astre {
     @Override
     public void marche(Vecteur vitesse, double temps) {
 
-
-    public String toString(){
-        return "o";
-    }
-    
-    public String getNom(){
-        return this.nom;
     }
 }
