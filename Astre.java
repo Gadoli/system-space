@@ -24,6 +24,7 @@ public abstract class Astre implements Attraction,Course{
     public double getMasse() { return masse; }
     public Vecteur getVitesseRelative() { return vitesseRelative; }
     public Vecteur getPositionRelative() { return positionRelative; }
+    public double getRayonReel() { return rayonReel; }
 
     /*setter*/
     public void setMasse(double masse) { this.masse = masse; }
